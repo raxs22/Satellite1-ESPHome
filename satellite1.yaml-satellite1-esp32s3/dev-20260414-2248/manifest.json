@@ -1,0 +1,22 @@
+{
+  "name": "FutureProofHomes.Satellite1",
+  "version": "dev-20260414-2248",
+  "home_assistant_domain": "esphome",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "ota": {
+        "path": "satellite1-esp32s3.ota.bin",
+        "md5": "20062323887ff7fac80287160e4321ea",
+        "summary": "develop-branch"
+      },
+      "parts": [
+        {
+          "path": "satellite1-esp32s3.factory.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
