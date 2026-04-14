@@ -118,6 +118,7 @@ voice_assistant:
     # Reset the voice assistant phase id and reset the LED animations.
     - lambda: id(voice_assistant_phase) = ${voice_assist_idle_phase_id};
     - script.execute: control_leds
+    - voice_assistant.start_continuous:
     
   on_timer_finished:
     - switch.turn_on: timer_ringing
