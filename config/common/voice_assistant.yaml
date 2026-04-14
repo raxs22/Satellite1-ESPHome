@@ -55,6 +55,8 @@ voice_assistant:
     - lambda: id(init_in_progress) = false;
     - lambda: id(voice_assistant_phase) = ${voice_assist_idle_phase_id};
     - script.execute: control_leds
+    - voice_assistant.start_continuous:
+
   on_client_disconnected:
     - voice_assistant.stop:
     - lambda: id(voice_assistant_phase) = ${voice_assist_not_ready_phase_id};
